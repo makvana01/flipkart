@@ -1527,32 +1527,6 @@ export default function ProductDetailModal({
                   </div>
                 )}
 
-                {/* Quality & Assurance Grid */}
-                <div style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(3, 1fr)',
-                  gap: 8,
-                  padding: '10px 8px',
-                  backgroundColor: '#f6f9fe',
-                  border: '1px solid #ddecfe',
-                  borderRadius: 8
-                }}>
-                  <div style={{ textAlign: 'center' }}>
-                    <div style={{ fontSize: 16 }}>🛡️</div>
-                    <div style={{ fontSize: 11, fontWeight: 700, color: '#2874f0', marginTop: 2 }}>Plus Assured</div>
-                    <div style={{ fontSize: 10, color: '#717478' }}>Quality Verified</div>
-                  </div>
-                  <div style={{ textAlign: 'center' }}>
-                    <div style={{ fontSize: 16 }}>🔄</div>
-                    <div style={{ fontSize: 11, fontWeight: 700, color: '#108435', marginTop: 2 }}>7 Days</div>
-                    <div style={{ fontSize: 10, color: '#717478' }}>Replacement</div>
-                  </div>
-                  <div style={{ textAlign: 'center' }}>
-                    <div style={{ fontSize: 16 }}>💵</div>
-                    <div style={{ fontSize: 11, fontWeight: 700, color: '#111112', marginTop: 2 }}>Cash on Delivery</div>
-                    <div style={{ fontSize: 10, color: '#717478' }}>Available</div>
-                  </div>
-                </div>
               </>
             )}
           </div>
