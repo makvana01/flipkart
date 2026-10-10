@@ -1,0 +1,376 @@
+/* Custom enhancements for Flipkart clone */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Cursor pointer for clickable elements */
+button, a, [role="button"], .nahfZL, .XFwMiH, ._1TOQfO, ._9Wy27C {
+  cursor: pointer !important;
+}
+
+/* Product card hover effect */
+a[href*="/p/"], div[data-component-type="productCard"], ._75nlfW, .slAVV4 {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a[href*="/p/"]:hover, ._75nlfW:hover, .slAVV4:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Slider button animation and visibility */
+.nahfZL {
+  transition: transform 0.2s ease, background 0.2s ease;
+  user-select: none;
+}
+
+.nahfZL:hover {
+  transform: scale(1.08);
+  background: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
+}
+
+/* Category item hover */
+._3sDu2W > div:hover, ._3sDu2W a:hover {
+  color: #2874f0 !important;
+}
+
+/* Search suggestions item */
+.fk-suggest-item {
+  padding: 10px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #212121;
+  transition: background 0.15s ease;
+}
+
+.fk-suggest-item:hover {
+  background-color: #f5f5f5;
+  color: #2874f0;
+}
+
+/* Cart Item card */
+.fk-cart-item {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.fk-cart-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+}
+
+.fk-cart-details {
+  flex: 1;
+}
+
+.fk-cart-title {
+  font-size: 14px;
+  color: #212121;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.fk-cart-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212121;
+}
+
+.fk-cart-remove {
+  color: #878787;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+.fk-cart-remove:hover {
+  color: #e53935;
+}
+
+/* Banner dots active style */
+.fk-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #c2c2c2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.fk-dot.active {
+  width: 24px;
+  background-color: #2874f0;
+}
+
+/* Fix sticky header z-index */
+header, ._23r-s_ {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  background: #fff;
+}
+
+/* Hero Carousel Controls & Smooth Continuous Scrolling */
+.S0f9kM {
+  position: relative !important;
+}
+
+.S0f9kM .ThdfW9 {
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+.S0f9kM .hKE1H7 {
+  display: flex !important;
+  transition: transform 0.65s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
+.S0f9kM .P56aSK {
+  flex-shrink: 0 !important;
+  user-select: none;
+}
+
+/* Custom Flipkart Carousel Arrow Navigation Buttons */
+.fk-carousel-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 88px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, transform 0.2s, opacity 0.2s;
+  border-radius: 4px;
+  opacity: 0.92;
+}
+
+.fk-carousel-nav-btn:hover {
+  background-color: #ffffff;
+  opacity: 1;
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
+}
+
+.fk-carousel-nav-btn.prev {
+  left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.fk-carousel-nav-btn.next {
+  right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.fk-carousel-nav-btn svg {
+  width: 18px;
+  height: 18px;
+  stroke: #212121;
+  stroke-width: 2.5;
+  fill: none;
+}
+
+/* Dot indicator enhancements */
+.DZQ2Mp {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 0 !important;
+}
+
+.DZQ2Mp .MwsF52 {
+  cursor: pointer;
+  height: 4px !important;
+  margin: 0 3px !important;
+  transition: all 0.35s ease !important;
+}
+
+.DZQ2Mp .MwsF52.pn1rOC {
+  background: #2874f0 !important;
+  width: 20px !important;
+  border-radius: 4px !important;
+}
+
+/* =========================================================
+   COMPREHENSIVE MOBILE RESPONSIVE ENHANCEMENTS (<= 768px)
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+  /* 1. Global Viewport & Container constraints */
+  html, body, #container {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  * {
+    box-sizing: border-box !important;
+  }
+
+  /* 2. Sticky Header & Search on Mobile */
+  .fwYXYA, [data-id="stickyElement"] {
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+
+  .OmE16y {
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+
+  .CTTtEa {
+    flex-wrap: wrap !important;
+    width: 100% !important;
+  }
+
+  /* Search Bar full-width and touch friendly */
+  input.zDPLDu, input[title*="Search"], input[placeholder*="Search"] {
+    font-size: 14px !important;
+    width: 100% !important;
+  }
+
+  /* Pincode & delivery location bar */
+  ._328HqJ, [class*="Location"], [class*="location"] {
+    font-size: 12px !important;
+    white-space: nowrap !important;
+    overflow-x: auto !important;
+  }
+
+  /* 3. Category Bar Ribbon on Mobile (smooth touch swipe) */
+  .css-g5y9jx[style*="overflow-x: auto"],
+  .jaZAME,
+  div[style*="overflow-x: scroll"],
+  div[style*="overflow-x: auto"] {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+
+  div[style*="overflow-x: scroll"]::-webkit-scrollbar,
+  div[style*="overflow-x: auto"]::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  /* 4. Hero Carousel Banner on Mobile */
+  .S0f9kM {
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow: hidden !important;
+    padding: 4px 0 8px !important;
+  }
+
+  .S0f9kM .ThdfW9 {
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow: hidden !important;
+  }
+
+  .S0f9kM .hKE1H7 {
+    display: flex !important;
+    width: 100% !important;
+    will-change: transform !important;
+  }
+
+  .S0f9kM .P56aSK {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-width: 100vw !important;
+    flex-shrink: 0 !important;
+    box-sizing: border-box !important;
+    padding: 0 6px !important;
+  }
+
+  .S0f9kM .P56aSK > div {
+    width: 100% !important;
+    padding-right: 0 !important;
+  }
+
+  .S0f9kM .P56aSK img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 41 / 20 !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+  }
+
+  /* Compact Arrow Buttons on Mobile */
+  .fk-carousel-nav-btn {
+    width: 30px !important;
+    height: 56px !important;
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    opacity: 0.8 !important;
+  }
+
+  .fk-carousel-nav-btn.prev {
+    left: 0 !important;
+  }
+
+  .fk-carousel-nav-btn.next {
+    right: 0 !important;
+  }
+
+  .fk-carousel-nav-btn svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  /* 5. Product Rows & Cards on Mobile */
+  .fWi7J_, .yiQOTv {
+    max-width: 100vw !important;
+    width: 100% !important;
+  }
+
+  /* All product horizontal carousels smoothly touch-scrollable */
+  .r-150rngu, .r-18u37iz, [style*="flex-direction: row"] {
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  /* 6. Footer on Mobile */
+  .iRgsyo, footer, ._2B5aae, [class*="footer"] {
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+    padding: 16px 12px !important;
+    box-sizing: border-box !important;
+  }
+
+  .EGBsCF {
+    flex-direction: column !important;
+    gap: 12px !important;
+    align-items: flex-start !important;
+  }
+
+  /* Cart Drawer & Location Modal on Mobile */
+  #cart-drawer, #location-modal-wrapper > div {
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+}
+
+

